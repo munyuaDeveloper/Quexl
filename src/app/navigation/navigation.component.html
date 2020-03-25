@@ -1,36 +1,45 @@
-<mat-toolbar color="primary">
-  <div fxHide.gt-xs>
-    <button mat-icon-button (click)="onToggleSidenav()">
-      <mat-icon>menu</mat-icon>
-    </button>
-  </div>
-  <div>
-    <a routerLink="/home">Owner-Account</a>
-  </div>
-  <div fxLayout="row" fxLayoutAlign="start center" fxHide.xs>
-    <div fxFlex="50">
+<div class="toolbar">
+  <div class="navbar">
+    <div fxHide.gt-xs>
+      <button mat-icon-button (click)="onToggleSidenav()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+    <div class="upper_nav" fxLayout="row" fxLayoutAlign="start center" fxHide.xs>
+      <div fxFlex="50">
+          <h2>Welcome to Quexl</h2>
+      </div>
+      <div fxFlex="">
+        <h3>Phone: +1 111 111 1111    Email: info@quexl.com</h3>
+      </div>
 
     </div>
-    <div fxFlex="">
-      <ul fxLayout fxLayoutGap="15px" class="navigation-items">
-        <li>
-          <a routerLink="/owner">Home</a>
-        </li>
-        <li>
-          <a routerLink="/account">About</a>
-        </li>
-        <li>
-          <a routerLink="/owner">Services</a>
-        </li>
-        <li>
-          <a routerLink="/account">Blog</a>
-        </li>
-        <li>
-          <a routerLink="/account">Contact</a>
-        </li>
-      </ul>
+
+    <div class="lower_nav" fxLayout="row" fxLayoutAlign="start center" fxHide.xs>
+      <div fxFlex="60">
+
+      </div>
+      <div fxFlex="">
+        <ul  fxLayout fxLayoutGap="50px" class="navigation-items">
+          <li class="nav_item">
+            <a routerLink="/owner">Home</a>
+          </li>
+          <li class="nav_item">
+            <a routerLink="/account">About</a>
+          </li>
+          <li class="nav_item">
+            <a routerLink="/owner">Services</a>
+          </li>
+          <li class="nav_item">
+            <a routerLink="/account">Blog</a>
+          </li>
+          <li class="nav_item">
+            <a routerLink="/account">Contact</a>
+          </li>
+          <li> <button class="start_working_btn" mat-raised-button>Join Now</button></li>
+        </ul>
+      </div>
+
     </div>
-
   </div>
-
-</mat-toolbar>
+</div>

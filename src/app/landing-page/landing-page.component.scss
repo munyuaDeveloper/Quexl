@@ -1,0 +1,323 @@
+$cadetblue: #318d8f;
+$redish: #ff7443;
+$whiteColor: #ffffff;
+$borderColor: darkslategrey;
+$chartreuse: #52a300;
+#main_wrapper {
+  width: 100%;
+  height: auto;
+}
+
+.section_wrapper {
+  width: 100%;
+  height: auto;
+  //border: 2px solid blue;
+  margin: 0;
+  padding: 0;
+}
+
+.section_content {
+  width: 80%;
+  margin: 0 auto;
+  //border: 2px solid red;
+}
+
+//==============================hero section============================================================================
+.hero_section {
+  background-image: url("../../assets/images/hero_bg2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 650px;
+  background-position: center;
+  color: $whiteColor;
+}
+
+.hero_section_wrap {
+  display: table;
+  width: 100%;
+  height: 500px;
+  padding: 20px;
+}
+
+.hero_content {
+  display: table-cell;
+  vertical-align: middle;
+
+  h1 {
+    font-size: 80px;
+    margin-bottom: 80px;
+  }
+
+  .start_working_btn {
+    border-radius: 20px;
+    width: 200px;
+    background-color: $cadetblue;
+    color: $whiteColor;
+    padding-top: 5px;
+  }
+
+  ::ng-deep.mat-form-field-appearance-outline .mat-form-field-outline {
+    background-color: $whiteColor;
+    border-radius: 2px;
+
+  }
+
+  ::ng-deep input.mat-input-element {
+    margin-top: -0.0625em;
+    color: black;
+  }
+
+  // subscribe form
+  .form_field {
+    height: 45px;
+    margin-bottom: 40px;
+  }
+
+  .get_started_btn {
+    width: 200px;
+    background-color: $redish;
+    color: $whiteColor;
+    margin-top: 40px;
+  }
+
+}
+
+//==============================Services section============================================================================
+.services_section {
+  padding-top: 50px;
+
+  .services_section_title {
+    margin-bottom: 50px;
+  }
+
+  .services_section_title h1 {
+    text-align: center;
+    color: $cadetblue;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .service_card {
+    color: $cadetblue;
+    border: 1px solid $borderColor;
+    img {
+      height: 395px;
+    }
+  }
+
+  .service_card_content {
+    padding: 15px;
+  }
+
+  .service_card_content h2 {
+    text-align: center;
+  }
+
+  // more services arrow indicators
+  .more_services_indicator {
+    margin-top: 50px;
+  }
+
+  .arrow_indicator {
+    clip-path: polygon(0 0, 54% 100%, 100% 0);
+    background-color: $cadetblue;
+    height: 30px;
+    width: 110px;
+    margin: 5px auto;
+  }
+
+  .more_services_section {
+    .more_service_btn {
+      border-radius: 20px;
+      background-color: cadetblue;
+      width: 250px;
+      padding: 6px 20px;
+      color: $whiteColor;
+      font-size: 18px;
+    }
+  }
+}
+
+//==============================About section============================================================================
+.about_section {
+  margin-top: 100px;
+
+  .about_section_title h1 {
+    margin: 50px 0;
+    text-align: center;
+    //color: $redish;
+    font-size: 80px;
+    font-weight: 500;
+    -webkit-text-fill-color: $redish; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $chartreuse;
+  }
+
+  .reason_bullet {
+    width: 100%;
+    height: 50px;
+    border: 2px solid $cadetblue;
+  }
+
+  .about_content {
+    margin-top: 50px;
+
+    h3 {
+      color: $cadetblue;
+      font-weight: bold;
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .reason {
+    margin-bottom: 20px;
+  }
+
+  .about_img {
+    width: 100%;
+  }
+}
+
+//==============================Testimonials section============================================================================
+.testimonials {
+  background: rgb(0,212,255);
+  background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,121,75,1) 100%);
+  padding: 50px 0;
+
+  .testimonials_section_desc {
+    color: $whiteColor;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .testimonial_card {
+    border: 1px solid $borderColor;
+
+    .testimonial_card_content {
+      margin: 15px;
+
+      h2 {
+        color: $redish;
+        font-size: 20px;
+      }
+
+      .client_name {
+        text-align: center;
+        color: $redish;
+      }
+    }
+
+    .testimonial_img {
+      width: 150px;
+      height: 150px;
+      border-radius: 100%;
+    }
+  }
+}
+
+//==============================Our Latest news section============================================================================
+.latest_news_section {
+  padding: 50px 0;
+  .news_card {
+    img {
+      height: 395px;
+    }
+  }
+}
+
+//==============================Contact section============================================================================
+.contact_section {
+  .contact_section_desc {
+    text-align: center;
+    h1 {
+      font-size: 40px;
+    }
+    h2{
+      text-decoration: underline;
+    }
+  }
+
+  .contact_card {
+    width: 75%;
+    margin: 50px auto;
+    box-shadow: 3px 3px rgb(209, 224, 224);
+
+    img {
+      height: 500px;
+      width: 90%;
+      margin: 2px auto;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      color: $cadetblue
+    }
+
+    .contact_form {
+      textarea {
+        height: 100px;
+      }
+    }
+    .contact_btn {
+      background-image: linear-gradient(to right top, #052837, #00566b, #008889, #00ba88, #12eb67);
+      color: $whiteColor;
+      border-radius: 20px;
+      height: 50px;
+      width: 250px;
+      font-size: 20px;
+    }
+  }
+}
+
+//==============================footer section============================================================================
+.footer_section {
+  clip-path: polygon(20% 0, 22% 12%, 100% 12%, 100% 100%, 0 100%, 0 0);
+  background-color: $cadetblue;
+  color: $whiteColor;
+  .footer_content {
+    width: 80%;
+    margin: 50px auto;
+    padding-top: 100px;
+    h3 {
+      margin: 0;
+    }
+  }
+  .bold_divider {
+    width: 50px;
+    border-bottom: 3px solid $chartreuse;
+    margin-bottom: 10px;
+  }
+  .quick_links {
+    h3 {
+      margin-left: 40px;
+    }
+    .bold_divider {
+      margin-left: 40px;
+    }
+    ul {
+      list-style: none;
+      margin-left: 0;
+      padding-top: 0;
+    }
+
+    ul li:before{
+      content: '>';
+    }
+  }
+
+  .blog_footer_section {
+    .blog_imgs {
+      margin-top: 30px;
+    }
+    .blog_imgs img {
+      width: 100%;
+      height: 80px;
+    }
+  }
+}
+

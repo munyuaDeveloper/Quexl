@@ -6,10 +6,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavigationComponent } from './navigation/navigation.component';
 import {MaterialModule} from './shared/modules/material/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent
+    NavigationComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
