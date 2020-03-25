@@ -1,8 +1,10 @@
-$cadetblue: #318d8f;
-$redish: #ff7443;
+$cadetblue: #008080;
+$redish: #f05b29;
 $whiteColor: #ffffff;
 $borderColor: darkslategrey;
 $chartreuse: #52a300;
+$purple: #5d0078;
+$bold_border: #62d7a1;
 #main_wrapper {
   width: 100%;
   height: auto;
@@ -54,6 +56,7 @@ $chartreuse: #52a300;
     background-color: $cadetblue;
     color: $whiteColor;
     padding-top: 5px;
+    font-size: 20px;
   }
 
   ::ng-deep.mat-form-field-appearance-outline .mat-form-field-outline {
@@ -78,6 +81,7 @@ $chartreuse: #52a300;
     background-color: $redish;
     color: $whiteColor;
     margin-top: 40px;
+    font-size: 20px;
   }
 
 }
@@ -120,7 +124,7 @@ $chartreuse: #52a300;
 
   .arrow_indicator {
     clip-path: polygon(0 0, 54% 100%, 100% 0);
-    background-color: $cadetblue;
+    background-color: $bold_border;
     height: 30px;
     width: 110px;
     margin: 5px auto;
@@ -184,8 +188,8 @@ $chartreuse: #52a300;
 
 //==============================Testimonials section============================================================================
 .testimonials {
-  background: rgb(0,212,255);
-  background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,121,75,1) 100%);
+  background: rgb(84,201,201);
+  background: linear-gradient(90deg, rgba(84,201,201,1) 0%, rgba(96,222,172,1) 50%);
   padding: 50px 0;
 
   .testimonials_section_desc {
@@ -221,7 +225,7 @@ $chartreuse: #52a300;
 
 //==============================Our Latest news section============================================================================
 .latest_news_section {
-  padding: 50px 0;
+  padding: 50px 0 10px 0;
   .news_card {
     img {
       height: 395px;
@@ -231,6 +235,10 @@ $chartreuse: #52a300;
 
 //==============================Contact section============================================================================
 .contact_section {
+  background-image: url('../../assets/images/contact_bg.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  //background-position: center;
   .contact_section_desc {
     text-align: center;
     h1 {
@@ -240,7 +248,10 @@ $chartreuse: #52a300;
       text-decoration: underline;
     }
   }
-
+  .contact {
+    padding-top: 170px;
+    color: $whiteColor;
+  }
   .contact_card {
     width: 75%;
     margin: 50px auto;
@@ -264,7 +275,8 @@ $chartreuse: #52a300;
       }
     }
     .contact_btn {
-      background-image: linear-gradient(to right top, #052837, #00566b, #008889, #00ba88, #12eb67);
+      background: rgb(84,201,201);
+      background: linear-gradient(90deg, rgba(84,201,201,1) 0%, rgba(96,222,172,1) 50%);
       color: $whiteColor;
       border-radius: 20px;
       height: 50px;
@@ -289,7 +301,7 @@ $chartreuse: #52a300;
   }
   .bold_divider {
     width: 50px;
-    border-bottom: 3px solid $chartreuse;
+    border-bottom: 3px solid $bold_border;
     margin-bottom: 10px;
   }
   .quick_links {

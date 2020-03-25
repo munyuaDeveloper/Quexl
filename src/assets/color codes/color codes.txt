@@ -1,0 +1,7 @@
+$cadetblue: #008080;
+$redish: #f05b29;
+$whiteColor: #ffffff;
+$borderColor: darkslategrey;
+$chartreuse: #52a300;
+$purple: #5d0078;
+$bold_border: #62d7a1;
