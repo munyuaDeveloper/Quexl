@@ -1,5 +1,5 @@
-$cadetblue: #008080;
-$redish: #f05b29;
+$cadetblue: #0f898c;
+$redish: #f05a28;
 $whiteColor: #ffffff;
 $borderColor: darkslategrey;
 $chartreuse: #52a300;
@@ -41,12 +41,16 @@ mat-sidenav {
     color: $whiteColor;
   }
 }
-
+.nav_logo {
+  width: 100px;
+  height: 100px;
+  margin-left: 32%;
+}
 .lower_nav {
   clip-path: polygon(21% 5%, 100% 5%, 100% 100%, 0 100%, 0 28%, 19% 28%);
   background-color: $whiteColor;
   color: black;
-  height: 90px;
+  height: 100px;
 }
 
 .start_working_btn {
