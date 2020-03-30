@@ -42,10 +42,10 @@ $bold_border: #62d7a1;
   left: 0;
   z-index: 1;
 }
-/* 
+/*
 The overlay div is just a colored element with some opacity.
-It's above the background image in our stack, so it appears to 
-darken the image 
+It's above the background image in our stack, so it appears to
+darken the image
 */
 .image-box__overlay {
   background: rgba(97, 23, 23, 0.5);
@@ -90,8 +90,8 @@ darken the image
 
   // subscribe form
   .form_field {
-    height: 45px;
-    margin-bottom: 40px;
+    height: 35px;
+    margin-bottom: 30px;
   }
 
   .get_started_btn {
@@ -357,7 +357,15 @@ darken the image
   }
 }
 
+@media screen and (min-width: 965px) {
+  //==============================footer section============================================================================
+  .footer_section {
+    clip-path: polygon(20% 0, 22% 12%, 100% 12%, 100% 100%, 0 100%, 0 0);
+    background-color: $cadetblue;
+    color: $whiteColor;
 
+  }
+}
 
 @media screen and (min-width: 480px) {
   //==============================hero section============================================================================
@@ -400,8 +408,8 @@ darken the image
 
     // subscribe form
     .form_field {
-      height: 45px;
-      margin-bottom: 40px;
+      height: 35px;
+      margin-bottom: 30px;
     }
 
     .get_started_btn {
@@ -560,7 +568,7 @@ darken the image
 
   //==============================footer section============================================================================
   .footer_section {
-    clip-path: polygon(20% 0, 22% 12%, 100% 12%, 100% 100%, 0 100%, 0 0);
+    //clip-path: polygon(20% 0, 22% 12%, 100% 12%, 100% 100%, 0 100%, 0 0);
     background-color: $cadetblue;
     color: $whiteColor;
     .footer_content {
@@ -606,3 +614,4 @@ darken the image
   }
 
 }
+
