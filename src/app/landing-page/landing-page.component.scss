@@ -34,6 +34,7 @@ $bold_border: #62d7a1;
   background-position: center;
   color: $whiteColor;
 }
+
 .image-box__overlay {
   position: absolute;
   top: 0;
@@ -42,6 +43,7 @@ $bold_border: #62d7a1;
   left: 0;
   z-index: 1;
 }
+
 /*
 The overlay div is just a colored element with some opacity.
 It's above the background image in our stack, so it appears to
@@ -52,6 +54,7 @@ darken the image
 
   z-index: 2;
 }
+
 .hero_section_wrap {
   display: table;
   width: 100%;
@@ -122,6 +125,7 @@ darken the image
   .service_card {
     color: $cadetblue;
     border: 1px solid $borderColor;
+
     img {
       height: 250px;
     }
@@ -206,8 +210,8 @@ darken the image
 
 //==============================Testimonials section============================================================================
 .testimonials {
-  background: rgb(84,201,201);
-  background: linear-gradient(90deg, rgba(84,201,201,1) 0%, rgba(96,222,172,1) 50%);
+  background: rgb(84, 201, 201);
+  background: linear-gradient(90deg, rgba(84, 201, 201, 1) 0%, rgba(96, 222, 172, 1) 50%);
   padding: 50px 0;
 
   .testimonials_section_desc {
@@ -244,6 +248,7 @@ darken the image
 //==============================Our Latest news section============================================================================
 .latest_news_section {
   padding: 50px 0 10px 0;
+
   .news_card {
     img {
       height: 300px;
@@ -260,17 +265,21 @@ darken the image
   //background-position: center;
   .contact_section_desc {
     text-align: center;
+
     h1 {
       font-size: 40px;
     }
-    h2{
+
+    h2 {
       text-decoration: underline;
     }
   }
+
   .contact {
     padding-top: 170px;
     color: $whiteColor;
   }
+
   .contact_card {
     width: 95%;
     margin: 30px auto;
@@ -293,9 +302,10 @@ darken the image
         height: 100px;
       }
     }
+
     .contact_btn {
-      background: rgb(84,201,201);
-      background: linear-gradient(90deg, rgba(84,201,201,1) 0%, rgba(96,222,172,1) 50%);
+      background: rgb(84, 201, 201);
+      background: linear-gradient(90deg, rgba(84, 201, 201, 1) 0%, rgba(96, 222, 172, 1) 50%);
       color: $whiteColor;
       border-radius: 20px;
       height: 50px;
@@ -310,38 +320,45 @@ darken the image
   //clip-path: polygon(20% 0, 22% 12%, 100% 12%, 100% 100%, 0 100%, 0 0);
   background-color: $cadetblue;
   color: $whiteColor;
+
   .footer_content {
     width: 90%;
     margin: 30px auto;
     padding-top: 40px;
+
     h3 {
       margin: 0;
     }
   }
+
   .bold_divider {
     width: 50px;
     border-bottom: 3px solid $bold_border;
     margin-bottom: 10px;
   }
-  .footer_logo{
+
+  .footer_logo {
     width: 150px;
     height: 100px;
     margin-left: 15%;
   }
+
   .quick_links {
     h3 {
       margin-left: 40px;
     }
+
     .bold_divider {
       margin-left: 40px;
     }
+
     ul {
       list-style: none;
       margin-left: 0;
       padding-top: 0;
     }
 
-    ul li:before{
+    ul li:before {
       content: '>';
     }
   }
@@ -350,6 +367,7 @@ darken the image
     .blog_imgs {
       margin-top: 30px;
     }
+
     .blog_imgs img {
       width: 100%;
       height: 80px;
@@ -398,7 +416,11 @@ darken the image
     ::ng-deep.mat-form-field-appearance-outline .mat-form-field-outline {
       background-color: $whiteColor;
       border-radius: 2px;
+      height: 42px !important;
+    }
 
+    ::ng-deep.mat-form-field-infix {
+      padding: 0;
     }
 
     ::ng-deep input.mat-input-element {
@@ -439,6 +461,7 @@ darken the image
     .service_card {
       color: $cadetblue;
       border: 1px solid $borderColor;
+
       img {
         height: 250px;
       }
@@ -521,17 +544,21 @@ darken the image
     //background-position: center;
     .contact_section_desc {
       text-align: center;
+
       h1 {
         font-size: 40px;
       }
-      h2{
+
+      h2 {
         text-decoration: underline;
       }
     }
+
     .contact {
       padding-top: 170px;
       color: $whiteColor;
     }
+
     .contact_card {
       width: 75%;
       margin: 50px auto;
@@ -554,9 +581,10 @@ darken the image
           height: 100px;
         }
       }
+
       .contact_btn {
-        background: rgb(84,201,201);
-        background: linear-gradient(90deg, rgba(84,201,201,1) 0%, rgba(96,222,172,1) 50%);
+        background: rgb(84, 201, 201);
+        background: linear-gradient(90deg, rgba(84, 201, 201, 1) 0%, rgba(96, 222, 172, 1) 50%);
         color: $whiteColor;
         border-radius: 20px;
         height: 50px;
@@ -571,33 +599,39 @@ darken the image
     //clip-path: polygon(20% 0, 22% 12%, 100% 12%, 100% 100%, 0 100%, 0 0);
     background-color: $cadetblue;
     color: $whiteColor;
+
     .footer_content {
       width: 80%;
       margin: 50px auto;
       padding-top: 100px;
+
       h3 {
         margin: 0;
       }
     }
+
     .bold_divider {
       width: 50px;
       border-bottom: 3px solid $bold_border;
       margin-bottom: 10px;
     }
+
     .quick_links {
       h3 {
         margin-left: 40px;
       }
+
       .bold_divider {
         margin-left: 40px;
       }
+
       ul {
         list-style: none;
         margin-left: 0;
         padding-top: 0;
       }
 
-      ul li:before{
+      ul li:before {
         content: '>';
       }
     }
@@ -606,6 +640,7 @@ darken the image
       .blog_imgs {
         margin-top: 30px;
       }
+
       .blog_imgs img {
         width: 100%;
         height: 50px;
